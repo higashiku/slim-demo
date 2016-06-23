@@ -1,0 +1,21 @@
+- title = 'Slim Sample'
+- number = 200
+
+html
+  head
+    meta charset="UTF-8"
+    title #{title}
+  body
+    h1#myId
+      | Hello!
+    p.myClass
+      | text text text.
+    ul
+      li
+        | kazu #{number}
+      li
+        | kazu number
+      li
+        | #{number * 2}
+      li
+        | number * 3

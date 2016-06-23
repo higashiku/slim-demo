@@ -1,0 +1,17 @@
+- title = 'Slim Sample'
+
+html
+  head
+    meta charset="UTF-8"
+    title
+      | #{title}
+  body
+    h1#myId
+      | Hello!
+    p.myClass
+      | text text text.
+
+    ul
+      - for i in 1..5 do
+        li
+          a href="/page-#{i}" リンク-#{i}

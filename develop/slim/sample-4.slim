@@ -1,0 +1,25 @@
+- title = 'Slim Sample'
+- array = {}
+- array = [{:name=>'Yamada', :phone=>'090-xxxx-xxxx', :age=>'25'}\
+           ,{:name=>'Tanaka', :phone=>'080-yyyy-yyyy', :age=>'43'}\
+           ,{:name=>'Satoh',  :phone=>'070-zzzz-zzzz', :age=>'18'}]
+
+html
+  head
+    meta charset="UTF-8"
+    title
+      | #{title}
+  body
+    h1#myId
+      | Hello!
+    p.myClass
+      | text text text.
+
+    - for var in array
+      h2
+        | Name: #{var[:name]}
+      ul
+        li
+          | Phone: #{var[:phone]}
+        li
+          | Age: #{var[:age]}

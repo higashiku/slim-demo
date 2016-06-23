@@ -1,0 +1,11 @@
+- $title = 'Slim Sample'
+
+html
+  == Slim::Template.new('develop/slim/sample-5-head.slimt').render
+  body
+    h1#myId
+      | Hello!
+    p.myClass
+      | text text text.
+    
+    == Slim::Template.new('develop/slim/sample-5-footer.slimt').render

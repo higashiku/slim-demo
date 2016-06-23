@@ -1,0 +1,5 @@
+- require 'date'
+- day = Date.today
+
+footer
+  | &copy; #{day.year}
